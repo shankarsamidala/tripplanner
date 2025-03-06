@@ -5,5 +5,4 @@ requests
 google-generativeai
 openai
 streamlit
-sqlite3
 google-generativeai
