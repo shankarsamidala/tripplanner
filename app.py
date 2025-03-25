@@ -83,7 +83,7 @@ st.markdown("""
 # Sidebar Navigation
 st.sidebar.title("🌍 Travel Planner")
 st.sidebar.image("https://source.unsplash.com/400x250/?travel,adventure", use_column_width=True)
-st.sidebar.markdown("### Plan your perfect trip with AI-powered recommendations!")
+st.sidebar.markdown("### Plan your perfect trip with recommendations!")
 
 if "user" not in st.session_state:
     if st.sidebar.button("🔑 Login"):
@@ -149,5 +149,5 @@ elif st.session_state.page == "Plan Trip":
                 st.rerun()
     
     if "trip_plan" in st.session_state:
-        st.subheader("🌟 Your AI-Powered Travel Itinerary")
+        st.subheader("🌟 Your Travel Itinerary")
         st.success(st.session_state["trip_plan"])
